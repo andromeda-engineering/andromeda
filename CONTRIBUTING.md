@@ -5,10 +5,10 @@ packages, and contributions are welcome.
 
 ## Ground rules
 
-- **This repo must stay self-contained.** Nothing here may reference or depend on the
-  private Andromeda packages (`@andromeda-eng/chronicle`, `connectors`, `foldspace`,
-  `workbench`, or the `andromeda-internal` repo). CI enforces this via
-  `pnpm check:no-private`.
+- **This repo must stay self-contained.** Everything here is open source; nothing may
+  reference or depend on the suite's non-public `@andromeda-eng/*` packages or
+  `andromeda-*` crates. CI enforces this via `pnpm check:no-private`, which allows only
+  the packages and crates that live in this repo.
 - Every package/crate must **lint, typecheck, test, and build** before a PR is merged.
 
 ## Workflow
