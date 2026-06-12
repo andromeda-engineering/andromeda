@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/andromeda-core",
+  "crates/andromeda-graph",
+]
+
+[workspace.package]
+edition = "2021"
+version = "0.0.0"
+license = "MIT"
+repository = "https://github.com/andromeda-engineering/andromeda"

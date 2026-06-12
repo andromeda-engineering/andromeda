@@ -1,0 +1,41 @@
+{
+  "name": "andromeda",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Andromeda — open-source primitives for the Andromeda agent stack (Core engine, AVML, graph, CLI kit, config).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andromeda-engineering/andromeda.git"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "turbo build",
+    "typecheck": "turbo typecheck",
+    "lint": "eslint .",
+    "test": "turbo test --concurrency=2",
+    "format": "eslint . --fix",
+    "clean": "turbo clean",
+    "doctor": "node scripts/doctor.mjs",
+    "check:no-private": "node scripts/check-no-private-refs.mjs",
+    "rust:fmt": "cargo fmt --all --check",
+    "rust:lint": "cargo clippy --workspace --all-targets -- -D warnings",
+    "rust:test": "cargo test --workspace",
+    "ci": "pnpm lint && pnpm check:no-private && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@stylistic/eslint-plugin": "^2.13.0",
+    "@types/node": "^25.9.3",
+    "eslint": "^9.34.0",
+    "tsx": "^4.19.0",
+    "turbo": "^2.5.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^2.1.0"
+  }
+}
