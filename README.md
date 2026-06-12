@@ -1,7 +1,7 @@
 # Andromeda
 
 Open-source primitives for the **Andromeda** agent stack — the public, MIT-licensed
-foundation that the broader Andromeda suite (Core, Chronicle, Foldspace) is built on.
+foundation that the broader Andromeda suite is built on.
 
 > **This is the public source-of-truth for Andromeda's open packages.** It builds and
 > tests entirely on its own. Issues and pull requests are welcome here — this repo is a
