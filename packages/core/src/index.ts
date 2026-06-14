@@ -7,15 +7,15 @@ export interface Timestamped {
   updatedAt: string;
 }
 
-export type SourceId = string;
-export type ArtifactId = string;
-export type CitationId = string;
-export type FindingId = string;
-export type InsightId = string;
-export type TopicId = string;
-export type NoteId = string;
-export type ActionItemId = string;
-export type EventId = string;
+export type SourceId = EntityId;
+export type ArtifactId = EntityId;
+export type CitationId = EntityId;
+export type FindingId = EntityId;
+export type InsightId = EntityId;
+export type TopicId = EntityId;
+export type NoteId = EntityId;
+export type ActionItemId = EntityId;
+export type EventId = EntityId;
 
 export interface TimeRange {
   start: string;
